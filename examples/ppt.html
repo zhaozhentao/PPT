@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>reveal.js - Math Plugin</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="../dist/reveal.css">
+  <link rel="stylesheet" href="../dist/theme/simple.css" id="theme">
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+    <section>
+      <h2>Machine Learning</h2>
+    </section>
+
+    <section>
+      <h2>Supervised Learning</h2>
+      <p>监督学习</p>
+      <h4>&</h4>
+      <h2>Unsupervised Learning</h2>
+      <p>无监督学习</p>
+    </section>
+    <section>
+      <p style="display: flex; align-items: center; justify-content: center;">
+        Supervised Learning 监督学习 <img style="width: 240px;" src="./assets/learn1.png" />
+      </p>
+    </section>
+  </div>
+
+</div>
+
+<script src="../dist/reveal.js"></script>
+<script src="../plugin/math/math.js"></script>
+<script>
+  Reveal.initialize({
+    history: true,
+    transition: 'linear',
+
+    math: {
+      // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+      config: 'TeX-AMS_HTML-full',
+      TeX: {
+        Macros: {
+          R: '\\mathbb{R}',
+          set: ['\\left\\{#1 \\; ; \\; #2\\right\\}', 2]
+        }
+      }
+    },
+
+    plugins: [RevealMath]
+  });
+</script>
+
+</body>
+</html>
