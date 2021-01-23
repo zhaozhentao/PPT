@@ -29,14 +29,53 @@
       <h2>Unsupervised Learning</h2>
       <p>无监督学习</p>
     </section>
+
     <section>
-      <p style="display: flex; align-items: center; justify-content: center;">
-        Supervised Learning 监督学习 <img style="width: 240px;" src="./assets/learn1.png" />
-      </p>
+      <h4 class="center_vertical">
+        Supervised Learning 监督学习 <img style="width: 240px;" src="./assets/learn1.png"/>
+      </h4>
+      <ul class="align_left">
+        <li>
+          Speech Recognition
+          <p class="center_vertical align_left">
+            f(<img style="width: 240px;" src="./assets/l2.png"/><small>(vector)</small> )　=　"How are you"
+            <small>(label)</small>
+          </p>
+        </li>
+
+        <li>
+          Image Recognition
+          <p class="center_vertical align_left">
+            f(<img style="width: 140px;" src="./assets/l3.png"/><small>(vector)</small> )　=　"Cat" <small>(label)</small>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Unsupervised Learning 无监督学习</h4>
     </section>
   </div>
 
 </div>
+
+<style>
+  .center_vertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .align_left {
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+  }
+
+  section {
+    overflow-y: scroll;
+  }
+</style>
 
 <script src="../dist/reveal.js"></script>
 <script src="../plugin/math/math.js"></script>
